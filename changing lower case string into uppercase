@@ -1,0 +1,17 @@
+fn main()
+{
+  let a = "apple".to_string();
+  let mut b = String::new();
+  for i in a.chars()
+  {
+      let mut i = i as u8;
+      i-=32;
+      let i = i as char;
+     
+      b.push(i);
+
+
+  }
+ 
+  println!("{}",b);
+  }
